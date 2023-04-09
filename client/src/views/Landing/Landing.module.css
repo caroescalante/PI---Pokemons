@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@800&display=swap');
+
+
+.background{
+    background-image:url('./images/fondo7.jpg') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+
+.divStyle {
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+}
+
+h1{
+  display: inline;
+  align-items: center;
+  font-weight:  bold;
+  margin-left: 11%;
+  margin-top: 10vh;
+  font-family: 'Lexend Exa', sans-serif;
+  font-size: 3rem;
+  color: #ffffff;
+    text-shadow: 0 0.1rem 0.5rem rgba(0,0,0,0.5);
+}
+
+
+.button{
+    width:60px;
+  height:60px;
+  background-color:#15273D;
+  margin: 5px;
+  padding:10px;
+  color: white;
+  border-radius: 50px;
+  border-color: white;
+  font-size:11px;
+  line-height:32px;
+  text-transform: uppercase;
+  float:left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.patita{
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #15273D;
+  color:white;
+  border-color: white;
+}

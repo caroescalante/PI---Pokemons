@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+.card { 
+    background-color: transparent;
+    font-style: bold;
+    margin: 0.2rem;
+    width: 26rem;
+    height: 24rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    line-height: 1rem; 
+    display:inline-block;
+    color: white;
+}
+
+.card:hover{
+    transition: box-shadow 0.5s ease;
+    box-shadow: 0 0.1rem 0.5rem rgb(0, 0, 0);
+
+}
+
+div img{
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    height: auto;
+}
+    
+.title > a {
+    justify-content: space-around;
+    color: #252323;
+    text-decoration: none;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    font-weight: 450;
+    width: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Unbounded', cursive;font-size: larger;
+}

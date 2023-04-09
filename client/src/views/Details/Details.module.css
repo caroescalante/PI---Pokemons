@@ -1,0 +1,14 @@
+.image{
+    height: 15cm;
+    width: 20cm;
+}
+
+.container{
+    background-image: url('./images/fondo2.jpg');
+    background-size: cover;
+    
+}
+
+.container__info{
+    color: white;
+}

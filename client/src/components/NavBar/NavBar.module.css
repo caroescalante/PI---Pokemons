@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+.mainContainer{
+    display: flex;
+    background-color:#100359;
+    justify-content: space-around;
+    border-color: #c194b5;
+    flex-direction: row;
+    font-family: 'Unbounded', cursive;
+    color: white
+};
+
+.home{
+    font-family: 'Unbounded', cursive;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+}
