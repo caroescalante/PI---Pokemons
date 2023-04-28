@@ -21,7 +21,7 @@ export const FILTER_LIFE = "FILTER_LIFE" //filtrar mayor a menor por vida
 export const getAllPokemons = () => {
     return async function(dispatch){
         try {
-            const apiData = await axios.get('http://localhost:3001/pokemons');
+            const apiData = await axios.get('mahmud.db.elephantsql.com/pokemons');
             const allData = apiData.data;
             dispatch({
                 type: GET_ALL_POKEMONS,
@@ -41,7 +41,7 @@ export const getAllTypes = () => {
     // Obtengo todos los types de mi back
     return async function (dispatch) {
         try {
-            const api = await axios.get(`http://localhost:3001/type`);
+            const api = await axios.get(`http://mahmud.db.elephantsql.com/type`);
           
             return dispatch ({
                 type: GET_ALL_TYPES,
@@ -60,7 +60,7 @@ export const getDescription = (id) => {
     // Enviar el id al reducere para crear la seccion de Description
     return async function (dispatch) {
         try {
-            const api = await axios.get(`http://localhost:3001/pokemons/${id}`);
+            const api = await axios.get(`mahmud.db.elephantsql.com/pokemons/${id}`);
             console.log(api.data);
             return dispatch ({
                 type: GET_DESCRIPTION,
@@ -80,7 +80,7 @@ export function getPokemonsForName (name)  {
         // let letra= name.toLowerCase().charAt(0).toUpperCase()+ name.toLowerCase().slice(1)
         let letra = name.toLowerCase()
         try{
-            const pokeData = await axios.get(`http://localhost:3001/pokemons?name=${letra}`)
+            const pokeData = await axios.get(`mahmud.db.elephantsql.com/pokemons?name=${letra}`)
              const allData = pokeData.data
           if (allData) {
            dispatch({
@@ -104,7 +104,7 @@ export function getPokemonsForName (name)  {
 export function postPokemon (payload) {
     return async function(dispatch){
         try {
-            const api = await axios.post('http://localhost:3001/pokemons/', payload )
+            const api = await axios.post('mahmud.db.elephantsql.com/pokemons/', payload )
             dispatch({
                 type: POST_POKEMON
             });
